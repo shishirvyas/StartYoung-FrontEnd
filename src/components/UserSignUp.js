@@ -26,7 +26,7 @@ export default function UserSignUp() {
     e.preventDefault()
     const student={firstName,lastName,mobileNumber,email,password}
     console.log(student)
-    fetch("http://localhost:8090/api/signup",{
+    fetch("https://codebrigade2022.azurewebsites.net/api/signup",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(student)

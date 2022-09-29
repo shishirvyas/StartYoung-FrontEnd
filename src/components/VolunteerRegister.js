@@ -26,7 +26,7 @@ export default function VolunteerRegister() {
     e.preventDefault()
     const volunteer={firstName,lastName,mobileNumber,email,type}
     console.log(volunteer)
-    fetch("http://localhost:8090/api/regvolunteer",{
+    fetch("https://codebrigade2022.azurewebsites.net/api/regvolunteer",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(volunteer)
