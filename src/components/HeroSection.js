@@ -2,21 +2,21 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-
+import {ButtonVolunteer} from './ButtonVolunteer';
 function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <h1>EVERYONE DESERVE THE CARE</h1>
+      <p>Join us now! Become a hero</p>
       <div className='hero-btns'>
-        <Button
+        <ButtonVolunteer
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
-        </Button>
+          Register a Volunteer
+        </ButtonVolunteer>
         <Button
           className='btns'
           buttonStyle='btn--primary'

@@ -3,9 +3,12 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
+import AboutUs from './components/pages/AboutUs';
+import Vision from './components/pages/Vision';
 import SignUp from './components/pages/SignUp';
+import UserSignUp from './components/UserSignUp';
+import OurImpact from './components/pages/OurImpact';
+import VolunteerRegister from './components/VolunteerRegister';
 
 function App() {
   return (
@@ -14,9 +17,12 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path='/about-us' component={AboutUs} />
+          <Route path='/vision' component={Vision} />
+          <Route path='/sign-up' component={UserSignUp} />
+          <Route path='/our-impact' component={OurImpact} />
+          <Route path='/volunteer' component={VolunteerRegister} />
+          
         </Switch>
       </Router>
     </>
